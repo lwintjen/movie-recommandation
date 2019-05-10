@@ -1,7 +1,9 @@
 """
 Author : Loris Wintjens
 Goal : Practicing and showing my skills using ML
-Title : Movie recommendation system
+Title : Movie recommendation content-based
+How to improve the current scripts ? Implementing a hybrid recommendation system that uses vote_count and
+vote_average feature from the dataset to provide better recommendations.
 """
 import pandas as pd
 import numpy as np
@@ -60,3 +62,4 @@ for (counter,movie) in enumerate (sortedSimilarMovies):
         print('============================================================================')
     elif counter <= 50 :
         print(counter, ' ', get_title_from_index(movie[0]))
+
